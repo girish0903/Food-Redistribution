@@ -1,0 +1,115 @@
+/* Login.css */
+
+/* Body styles */
+.bodyy {
+    background-image: url('pexels-lukas-616401.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling on the body */
+}
+
+/* Login container */
+.login-container {
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-radius: 10px;
+    width: 350px;
+    padding: 40px;
+    text-align: center; /* Center align content */
+}
+
+/* Login header */
+.login-header {
+    margin-bottom: 20px;
+}
+
+.login-header h2 {
+    color: #333333;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase header text */
+    letter-spacing: 1px; /* Increase letter spacing */
+}
+
+/* Form fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555555;
+    text-transform: uppercase; /* Uppercase form label */
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #dddddd; /* Lighter border */
+    border-radius: 6px;
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #ff7f50; /* Focus color */
+}
+
+/* Submit button */
+.btn-login {
+    background-color: #ff7f50;
+    color: #ffffff;
+    border: none;
+    padding: 14px 24px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase; /* Uppercase button text */
+}
+
+.btn-login:hover {
+    background-color: #000000;
+}
+
+/* Error message */
+.error-message {
+    color: #ff4500;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%;
+        max-width: 300px;
+        padding: 30px;
+    }
+
+    .login-header h2 {
+        font-size: 24px;
+    }
+
+    .form-control {
+        padding: 10px;
+    }
+
+    .btn-login {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}

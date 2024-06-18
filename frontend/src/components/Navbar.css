@@ -1,0 +1,114 @@
+/* Navbar container */
+nav {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: #ffffff; /* Text color */
+  padding: 15px 30px; /* Increased padding for better spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  transition: box-shadow 0.3s ease, background 0.3s ease; /* Smooth transition for box-shadow and background */
+}
+
+/* Navbar brand */
+.navbar-brand {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff; /* Brand text color */
+  text-decoration: none;
+  margin-right: 30px; /* Add margin for separation from navigation links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar-brand:hover {
+  color: #ff7f50; /* Change color on hover */
+}
+
+/* Navbar links container */
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar list item */
+.nav-item {
+  margin-right: 20px;
+}
+
+/* Navbar link */
+.nav-link {
+  text-decoration: none;
+  color: #ffffff; /* Text color */
+  font-size: 18px;
+  font-weight: bold; /* Make navigation links bolder */
+  padding: 10px 20px; /* Add padding to make them look like buttons */
+  border-radius: 25px; /* Add border radius for rounded corners */
+  background-color: transparent; /* Transparent button background color */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  border: none; /* Remove border */
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 127, 80, 0.2); /* Change background color on hover */
+  color: #ff7f50; /* Change text color on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.nav-item:last-child .nav-link {
+  margin-right: 0; /* Remove right margin for last navigation link */
+}
+
+.nav-link:focus {
+  outline: none; /* Remove outline on focus */
+  box-shadow: 0 0 0 4px rgba(255, 127, 80, 0.3); /* Add focus shadow */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-brand {
+    margin-bottom: 15px;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Style for the logout button */
+button {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: rgba(255, 127, 80, 0.2);
+  color: #ff7f50;
+  transform: translateY(-2px);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 127, 80, 0.3);
+}

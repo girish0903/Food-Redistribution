@@ -1,0 +1,15 @@
+/* ChartComponent.css */
+
+/* Chart container */
+.chart-container {
+  position: relative;
+  margin: 20px auto; /* Center the chart */
+  max-width: 800px; /* Limit chart width */
+}
+
+/* Canvas */
+.canvas-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Set chart height */
+}

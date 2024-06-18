@@ -1,0 +1,116 @@
+/* RegisterForm.css */
+
+/* Body styles */
+.bodyy {
+    background-image: url('pexels-lukas-616401.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure full viewport height */
+    margin: 0;
+    overflow: auto; /* Enable scrolling on body */
+}
+
+/* Register container */
+.register-container {
+    
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-radius: 10px;
+    width: 350px;
+    padding: 40px;
+    text-align: center; /* Center align content */
+    max-height: calc(100vh - 120px); /* Ensure container doesn't exceed viewport minus margin */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Register header */
+.register-header {
+    margin-bottom: 10px;
+}
+
+.register-header h2 {
+    color: #333333;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase header text */
+    letter-spacing: 1px; /* Increase letter spacing */
+}
+
+/* Form fields */
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555555;
+    text-transform: uppercase; /* Uppercase form label */
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #dddddd; /* Lighter border */
+    border-radius: 6px;
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #4e54c8; /* Focus color */
+}
+
+/* Submit button */
+.btn-register {
+    background-color: #4e54c8;
+    color: #ffffff;
+    border: none;
+    padding: 14px 24px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase; /* Uppercase button text */
+}
+
+.btn-register:hover {
+    background-color: #8f94fb;
+}
+
+/* Error message */
+.error-message {
+    color: #ff4500;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .register-container {
+        width: 90%;
+        max-width: 300px;
+        padding: 30px;
+    }
+
+    .register-header h2 {
+        font-size: 24px;
+    }
+
+    .form-control {
+        padding: 10px;
+    }
+
+    .btn-register {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}

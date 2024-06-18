@@ -1,0 +1,21 @@
+/* Analytics.css */
+
+/* Analytics container */
+.analytics-container {
+  text-align: center;
+  margin-top: 50px; /* Add space above the component */
+}
+
+/* Heading */
+.analytics-heading {
+  font-size: 32px;
+  color: #333; /* Dark gray */
+  margin-bottom: 20px;
+}
+
+/* Chart container */
+.chart-container {
+  display: inline-block; /* Ensure chart is centered */
+  width: 600px; /* Set chart width */
+  height: 400px; /* Set chart height */
+}

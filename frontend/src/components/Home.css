@@ -1,0 +1,79 @@
+/* Reset some basic styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure it takes full viewport height */
+  background: url('background2.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Heading */
+.heading {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #000000; /* Ensure heading text is white for better contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow for better readability */
+}
+
+/* Description */
+.description {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 500;
+  max-width: 600px; /* Limit width for better readability */
+  color: #000000; /* Ensure description text is white for better contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow for better readability */
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Use gap instead of margin for better control */
+}
+
+/* Button */
+.button {
+  background-color: #27ae60;
+  color: #ffffff; /* Light color for button text */
+  border: none;
+  border-radius: 50px;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  background-color: #219653;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px); /* Add a slight lift effect on hover */
+}
+
+.button:active {
+  transform: translateY(0); /* Reset the lift effect on click */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
