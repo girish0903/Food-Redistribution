@@ -8,16 +8,16 @@ body, html {
 
 /* Full-page background */
 .restaurant {
-  background-image: url('pexels-lukas-616401.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh; /* Ensure it covers full viewport height */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center the container horizontally */
-  align-items: center; /* Center the container vertically */
-  overflow: hidden; /* Prevent scrolling */
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-radius: 10px;
+    width: 350px;
+    padding: 40px;
+    text-align: center; /* Center align content */
+    max-height: calc(100vh - 120px); /* Ensure container doesn't exceed viewport minus margin */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin: auto; /* Center horizontally */
+    margin-top: 20px; /* Add some top margin */
 }
 
 /* Container */

@@ -1,21 +1,15 @@
-/* Analytics.css */
-
-/* Analytics container */
-.analytics-container {
-  text-align: center;
-  margin-top: 50px; /* Add space above the component */
+.bodyy {
+  background-image: url('pexels-lukas-616401.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure full viewport height */
+  margin: 0;
+  overflow: auto; /* Enable scrolling on body */
 }
 
-/* Heading */
-.analytics-heading {
-  font-size: 32px;
-  color: #333; /* Dark gray */
-  margin-bottom: 20px;
-}
 
-/* Chart container */
-.chart-container {
-  display: inline-block; /* Ensure chart is centered */
-  width: 600px; /* Set chart width */
-  height: 400px; /* Set chart height */
-}

@@ -18,10 +18,13 @@ public class AnalyticsController {
         this.analyticsService = analyticsService;
     }
 
+
     @GetMapping("/analytics")
     public AnalyticsData getAnalyticsData() {
         return analyticsService.getAnalyticsData();
     }
+
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
 
     @PostMapping("/analytics/add") // Corrected endpoint mapping
     public ResponseEntity<AnalyticsData> addAnalyticsData(@RequestBody AnalyticsData analyticsData) {
