@@ -76,6 +76,18 @@ const AnalyticsPage = () => {
         },
       ],
     },
+    orders: {
+      labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+      datasets: [
+        {
+          label: 'Number of Orders',
+          data: [62, 55, 77, 82, 52, 49],
+          backgroundColor: 'rgba(75,192,192,0.4)',
+          borderColor: 'rgba(75,192,192,1)',
+          borderWidth: 1,
+        },
+      ],
+    },
     roles: {
       labels: ['NGOs', 'Restaurants'],
       datasets: [
@@ -114,7 +126,7 @@ const AnalyticsPage = () => {
         </ChartContainer>
         <ChartContainer>
           <h2>Monthly Donations</h2>
-          <Bar data={data.users} options={options} />
+          <Bar data={data.orders} options={options} />
         </ChartContainer>
       </ChartSection>
     </Container>
